@@ -9,23 +9,56 @@ namespace ZooSimulator.Animals
 {
 	public class Animal
 	{
-		private struct Location
+		protected struct Location
 		{
 			public int x;
 			public int y;
 		}
 
 		#region Fields
-		private PictureBox picture;
+		protected PictureBox picture;
 		///<summary>Tipo de Comida: 1 - Grass, 2 - Meat</summary>
 		protected int food;
-		private int hunger;
+		protected int hunger;
 		private Boundaries boundaries;
-		private Location location;
+		protected Location location;
 
 		#endregion
 
+		#region Properties
+		public int Food
+		{
+			get { return food; }
+			set
+			{
+				if ((value > 0) && (value < 10))
+					food = value;
+				else
+					food = 1;
+			}
+		}
+
+		public string Name { get; set; }
+
+		#endregion
+
+
 		#region Methods
+
+		public void FoodSet(int food)
+		{
+			if ((food > 0) && (food < 10))
+				this.food = food;
+			else
+				this.food = 1;
+		}
+
+		public int FoodGet()
+		{
+			return this.food;
+		}
+
+
 		public string MakeNoise()
 		{
 			return "Toimmmmm";

@@ -1,6 +1,6 @@
 ﻿namespace ZooSimulator.Animals
 {
-	internal class Boundaries
+	public class Boundaries
 	{
 		#region Fields
 		private int height;

@@ -8,9 +8,14 @@ namespace ZooSimulator.Animals
 {
 	public class Hippo : Animal
 	{
-		public void teste()
+		public new string MakeNoise()
 		{
-			this.
+			return "Hipoooooo";
+		}
+
+		public new string Eat()
+		{
+			return "Hippo alimentado";
 		}
 	}
 }

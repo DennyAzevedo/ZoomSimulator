@@ -16,12 +16,25 @@ namespace ZooSimulator.Test
 		}
 
 		[TestMethod]
-		public void VerificaFieldHippo()
+		public void VerificaMakeNoiseHippo()
 		{
+			string barulho;
 			Hippo hippo = new Hippo();
-			//hippo = 4;
 
-			//Assert.Equals(hippo.food, 4);
+			barulho = hippo.MakeNoise();
+
+			Assert.AreEqual(barulho, "Hipoooooo");
+		}
+
+		[TestMethod]
+		public void VerificaSleepHippo()
+		{
+			string barulho;
+			Hippo hippo = new Hippo();
+
+			barulho = hippo.Sleep();
+
+			Assert.AreEqual(barulho, "ZZZzzzzzz");
 		}
 	}
 }
