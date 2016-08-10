@@ -7,7 +7,7 @@ using System.Windows.Forms;
 
 namespace ZooSimulator.Animals
 {
-	public class Animal
+	public abstract class Animal
 	{
 		protected struct Location
 		{
@@ -59,10 +59,7 @@ namespace ZooSimulator.Animals
 		}
 
 
-		public string MakeNoise()
-		{
-			return "Toimmmmm";
-		}
+		public abstract string MakeNoise();
 
 		public string Eat()
 		{

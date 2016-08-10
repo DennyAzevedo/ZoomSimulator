@@ -43,8 +43,19 @@
   <ItemGroup>
     <Compile Include="Animal.cs" />
     <Compile Include="Boundaries.cs" />
+    <Compile Include="Cachorro.cs" />
+    <Compile Include="Canino.cs" />
+    <Compile Include="Felino.cs" />
+    <Compile Include="Gato.cs" />
     <Compile Include="Hippo.cs" />
+    <Compile Include="IRace.cs" />
+    <Compile Include="Leao.cs" />
+    <Compile Include="Lobo.cs" />
     <Compile Include="Properties\AssemblyInfo.cs" />
+    <Compile Include="Tigre.cs" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="ClassDiagramAnimals.cd" />
   </ItemGroup>
   <Import Project="$(MSBuildToolsPath)\Microsoft.CSharp.targets" />
   <!-- To modify your build process, add your task inside one of the targets below and uncomment it. 
